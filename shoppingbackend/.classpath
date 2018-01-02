@@ -23,5 +23,20 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Jimy/.m2/repository/org/hibernate/hibernate-entitymanager/4.2.19.Final/hibernate-entitymanager-4.2.19.Final.jar" sourcepath="C:/Users/Jimy/.m2/repository/org/hibernate/hibernate-entitymanager/4.2.19.Final/hibernate-entitymanager-4.2.19.Final-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="hibernate-entitymanager-4.2.19.Final.jar"/>
+			<attribute name="maven.groupId" value="org.hibernate"/>
+			<attribute name="maven.artifactId" value="hibernate-entitymanager"/>
+			<attribute name="maven.version" value="4.2.19.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
