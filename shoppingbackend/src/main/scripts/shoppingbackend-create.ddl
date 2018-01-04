@@ -7,7 +7,7 @@
         name varchar(255),
         primary key (id)
     );
-
+ 
     create table Product (
         id  serial not null,
         is_active boolean,

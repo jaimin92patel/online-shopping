@@ -9,9 +9,6 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
 @SuppressWarnings({ "deprecation", "unused" })
 public class Hbm2ddl {
 
-	
-	 * Use hibernate 4.* version to use this and also make achange of version in HibernateConfig
-	 * 
 	public static void main( String args[] )
     {
         if( args.length == 0 )

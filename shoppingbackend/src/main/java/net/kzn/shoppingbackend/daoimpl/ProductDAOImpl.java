@@ -17,32 +17,6 @@ public class ProductDAOImpl implements ProductDAO {
 
 	@Autowired
 	private SessionFactory sessionFactory;
-	
-	static {
-		
-		Product product = new Product();
-		
-		//Adding First Category
-		product.setId(1);
-		product.setName("Television");
-		product.setDescription("This is desc for good television.");
-		product.setBrand("Sony");
-	
-		//Second category
-		product = new Product();
-		product.setId(2);
-		product.setName("CDPlayer");
-		product.setDescription("This is desc for good cd player.");
-		product.setBrand("Sony");
-		
-		//Third category
-		product = new Product();
-		product.setId(3);
-		product.setName("Mobile");
-		product.setDescription("This is desc for good Mobile.");
-		product.setBrand("LG");
-
-	}
 
 	/*
 	 * Get Product
@@ -75,7 +49,9 @@ public class ProductDAOImpl implements ProductDAO {
 	@Override
 	public boolean add(Product product) {
 		try {
-			sessionFactory.getCurrentSession().persist(product);
+			sessionFactory
+				.getCurrentSession()
+					.persist(product);
 			return true;
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -89,7 +65,9 @@ public class ProductDAOImpl implements ProductDAO {
 	@Override
 	public boolean update(Product product) {
 		try {
-			sessionFactory.getCurrentSession().update(product);
+			sessionFactory
+				.getCurrentSession()
+					.update(product);
 			return true;
 		}catch(Exception e) {
 			e.printStackTrace();

@@ -34,7 +34,8 @@
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
 <!-- Bootstrap DataTabls CSS -->
-<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+<%-- <link href="${css}/dataTables.bootstrap.css" rel="stylesheet"> --%>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -85,16 +86,24 @@
 		<%@include file="./shared/footer.jsp"%>
 
 		<!-- jQuery -->
-		<script src="${js}/jquery.min.js"></script>
+		<%-- <script src="${js}/jquery.min.js"></script> --%>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- jQuery Validator -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
 		
 		<!-- Bootstrap core JavaScript -->
-		<script src="${js}/bootstrap.bundle.min.js"></script>
+		<%-- <script src="${js}/bootstrap.bundle.min.js"></script> --%>
 		
 		<!-- DataTable Plugin -->
 		<script src="${js}/jquery.dataTables.js"></script>
 		
 		<!-- DataTables Botstrap Script -->
 		<script src="${js}/dataTables.bootstrap.js"></script>
+		
+		<!-- BootBox -->
+		<script src="${js}/bootbox.min.js"></script>
 		
 		<!-- Self Coded JavaScript -->
 		<script src="${js}/myapp.js"></script>
